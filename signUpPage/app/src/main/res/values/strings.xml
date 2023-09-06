@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Signuppage1</string>
+    <string name="sign_up">Sign up</string>
+    <string name="create_your_account">Create your account</string>
+    <string name="confirm_password">Confirm Password</string>
+</resources>
