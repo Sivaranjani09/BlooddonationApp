@@ -5,192 +5,91 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+        tools:ignore="ExtraText">
 
-    <TextView
-        android:id="@+id/login"
-        android:layout_width="150dp"
-        android:layout_height="75dp"
-        android:layout_marginTop="16dp"
-        android:text="Login"
-        android:textColor="#E53935"
-        android:textSize="45sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.061"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.096" />
-
-    <TextView
-        android:id="@+id/text1"
-        android:layout_width="367dp"
-        android:layout_height="35dp"
-        android:text="Please enter your login details to sign in"
-        android:textColor="#1B1A1A"
-        android:textSize="20sp"
-        android:textStyle="normal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.363"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/login" />
-
-    <EditText
-        android:id="@+id/username"
-        android:layout_width="367dp"
-        android:layout_height="64dp"
-        android:layout_marginTop="32dp"
-        android:background="@drawable/edit_text_background"
-        android:ems="10"
-        android:hint="User name"
-        android:inputType="text"
-        android:paddingLeft="18sp"
-        android:textColorHint="#EA9696"
-        android:textSize="22dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.363"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text1" />
-
-    <TextView
-        android:id="@+id/forgotpw"
-        android:layout_width="198dp"
-        android:layout_height="42dp"
-        android:layout_marginTop="8dp"
-        android:paddingTop="8sp"
-        android:text="Forgot password?"
-        android:textColor="#191414"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.075"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/password"
-        app:layout_constraintVertical_bias="0.06" />
-
-    <TextView
-        android:id="@+id/loginwith"
-        android:layout_width="91dp"
-        android:layout_height="28dp"
-        android:layout_marginBottom="10dp"
-        android:paddingLeft="5sp"
-        android:text="Login with"
-        android:textColor="#191414"
-        android:textSize="18sp"
-        android:textStyle="normal"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/loginbtn"
-        app:layout_constraintVertical_bias="0.518" />
-
-    <EditText
-        android:id="@+id/password"
-        android:layout_width="369dp"
-        android:layout_height="65dp"
-        android:background="@drawable/edit_text_background"
-        android:ems="10"
-        android:hint="Password"
-        android:inputType="textPassword"
-        android:paddingLeft="18sp"
-        android:textColorHint="#EA9696"
-        android:textSize="22sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.38"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/username"
-        app:layout_constraintVertical_bias="0.052" />
-
-    <Button
-        android:id="@+id/loginbtn"
-        android:layout_width="356dp"
-        android:layout_height="61dp"
-        android:layout_marginTop="4dp"
-        android:background="@drawable/btn_bg"
-        android:text="Log in"
-        android:textColor="@color/white"
-        android:textSize="22sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.454"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/forgotpw"
-        app:layout_constraintVertical_bias="0.117" />
-
-    <TextView
-        android:id="@+id/newuser"
-        android:layout_width="95dp"
-        android:layout_height="23dp"
-        android:layout_marginStart="1dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="1dp"
-        android:text="New user?"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.08"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/loginbtn"
-        app:layout_constraintVertical_bias="0.083" />
-
-    <TextView
-        android:id="@+id/signup"
-        android:layout_width="69dp"
-        android:layout_height="23dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="32dp"
-        android:text="Sign up"
-        android:textColor="#E53935"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/newuser"
-        app:layout_constraintTop_toBottomOf="@+id/loginbtn"
-        app:layout_constraintVertical_bias="0.1" />
-
-    <RelativeLayout
-        android:id="@+id/buttonContainer"
-        android:layout_width="wrap_content"
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints">
 
-    </RelativeLayout>
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@id/topAppBar"
+            style="@style/Widget.MaterialComponents.Toolbar.Primary"
+            android:layout_width="match_parent"
+            android:layout_height="71dp"
+            app:menu="@menu/top_add_bar"
+            app:title=""></com.google.android.material.appbar.MaterialToolbar>
 
-    <ImageView
-        android:id="@+id/googleicon"
-        android:layout_width="65dp"
-        android:layout_height="58dp"
-        android:layout_marginBottom="8dp"
-        android:padding="8dp"
-        android:paddingRight="2dp"
-        android:paddingBottom="105dp"
-        android:src="@drawable/googlelogo"
+    </com.google.android.material.appbar.AppBarLayout><![CDATA[>
+
+
+    ]]>
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="78dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="8dp"
+            android:orientation="horizontal"
+            tools:ignore="ExtraText">
+
+            />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/button"
+                android:paddingLeft="10dp"
+                android:paddingEnd="10dp"
+                android:text="Post a Request"
+                android:textColor="#070707"
+                android:textSize="12sp"
+                android:textcolor="@android:color/black" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/button"
+                android:text="Track your Request"
+                android:textColor="#0C0C0C"
+                android:textSize="12sp"
+                android:textcolor="@android:color/black" />
+
+        </LinearLayout>
+    </FrameLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="4dp"
+        android:background="#FFFEFE"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.272"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
-
-    <TextView
-        android:id="@+id/google"
-        android:layout_width="187dp"
-        android:layout_height="44dp"
-        android:layout_marginBottom="5dp"
-        android:padding="8dp"
-        android:paddingTop="20sp"
-        android:text="Login with Google"
-        android:textColor="#1B1A1A"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.656"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.983" />
-
-
+        app:menu="@menu/bottom_nav_menu" />
 </androidx.constraintlayout.widget.ConstraintLayout>
